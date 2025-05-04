@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="Robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find Robot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find Robot_description)/urdf/Robot.trans" />
-<xacro:include filename="$(find Robot_description)/urdf/Robot.gazebo" />
+<xacro:include filename="$(find proyecto)/urdf/materials.xacro" />
+<xacro:include filename="$(find proyecto)/urdf/Robot.trans" />
+<xacro:include filename="$(find proyecto)/urdf/Robot.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.011211 -2.022818 -0.91961" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/placa_base_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/placa_base_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.011211 -2.022818 -0.91961" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/placa_base_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/placa_base_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.397565 -0.568456 -0.317359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/base_r_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/base_r_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.397565 -0.568456 -0.317359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/base_r_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/base_r_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.397565 -0.568456 -0.609359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/s_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/s_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.397565 -0.568456 -0.609359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/s_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/s_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-1.137571 -0.490512 -0.757359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/l_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/l_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-1.137571 -0.490512 -0.757359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/l_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/l_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-1.137534 -0.301512 -1.907359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/u_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/u_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-1.137534 -0.301512 -1.907359" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/u_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/u_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-2.166033 -0.568589 -2.157277" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/r_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/r_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.166033 -0.568589 -2.157277" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/r_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/r_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-2.362546 -0.399739 -2.157247" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/b_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/b_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.362546 -0.399739 -2.157247" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/b_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/b_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-2.582537 -0.527255 -2.157192" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/t_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/t_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2.582537 -0.527255 -2.157192" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/t_axis_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/t_axis_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-1.412434 -1.519454 -1.498385" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/balancer_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/balancer_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-1.412434 -1.519454 -1.498385" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/balancer_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/balancer_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="0.078722 -1.952822 -1.863697" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/balancer_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/balancer_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.078722 -1.952822 -1.863697" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Robot_description/meshes/balancer_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://proyecto/meshes/balancer_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
