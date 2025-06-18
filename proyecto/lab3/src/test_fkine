@@ -3,25 +3,30 @@ import rospy
 from sensor_msgs.msg import JointState
 
 from markers import *
-from lab3functions import *
+from lab3functions_1 import *
 
 if __name__ == '__main__':
 
   rospy.init_node("testForwardKinematics")
   pub = rospy.Publisher('joint_states', JointState, queue_size=1)
   bmarker = BallMarker(color['GREEN'])
+  marker = FrameMarker()
+ 
 
   # Joint names
   jnames = ['base_link1', 'link1_link2', 'link2_link3','link3_link4', 'link4_link5', 'link5_link6','link6_link7']
   # Joint Configuration
   #q = [2, 2, 2, 2, 2, 2,2]
-  #q = [-1, 0.8, 0.2, 0.2, 0.7, 0.8,0.4]
+  q = [-1, 0.8, 0.2, 0.2, 0.7, 0.8,0.4]
   #q = [0, 0, 0, 0., 1.2, 0.,0.]
-  q = [0, 0,0, 0, 0, 0,0]
+  #q = [0, 0, 0, 0, 0, 0, 0]
   # End effector with respect to the base
-  T = fkine_es200(q)
+  T = dhreal(q)
   print( np.round(T, 3) )
   bmarker.position(T)
+  x0 = TF2xyzquat(T)
+  marker.setPose(x0)
+
 
   # Object (message) whose type is JointState
   jstate = JointState()
@@ -40,5 +45,6 @@ if __name__ == '__main__':
     # Publish the message
     pub.publish(jstate)
     bmarker.publish()
+    marker.publish()
     # Wait for the next iteration
     rate.sleep()
